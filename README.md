@@ -1,5 +1,5 @@
 # Meter Reading Uploader
-As an Energy Company Account Manager, I want to be able to load a CSV file of Customer Meter Readings So that we can monitor their energy consumption and charge them accordingly
+As an Energy Company Account Manager, I want to be able to load a CSV file of Customer Meter Readings so that we can monitor their energy consumption and charge them accordingly
 
 ## Description
 
@@ -9,6 +9,23 @@ There are 2 projects in the solution
 
 * TestProject.MeterReader.WebAPI (API Project)
 * TestProject.MeterReading.APP (App Project)
+
+### Solution folder structure
+
+#### Core
+This folder includes the models, interfaces and constants shared across the application.
+
+#### Persistence
+This folder consists the implementation of the database layer using entityframework. 
+
+#### Presentation
+This folder consists of the WebAPI and the Web APP project
+
+#### Services
+This folder contains libraries needed to perform business logic
+
+#### Tests
+This folder contains the tests(NUnit) for the services and web api controller. The data is mocked in this section.
 
 ### API Project
 
@@ -45,7 +62,7 @@ This APP consumes the API. When you run the APP you will be presented a page tha
 * Set multiple projects(API and APP) as startup projects 
 * Run
 
-*You can upload a file and process it using the try now in the swagger definition page or postman
-*You can upload a file and process it via the APP
+* You can upload a file and process it using the try now in the swagger definition page or postman
+* You can upload a file and process it via the APP
 
 
