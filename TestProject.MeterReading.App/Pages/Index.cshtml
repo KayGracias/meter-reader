@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post" style="border:double;" enctype="multipart/form-data">
+    <h3>Upload Bulk Customer Meter Reading </h3>
+    <label>Select your csv File: </label>
+    <input type="file" asp-for="CSVFile" />
+
+
+    <br />
+    <br />
+    <br />
+    <input type="submit" />
+    <label style="color:green">@Model.Message</label>
+    <label style="color:red">@Model.Error</label>
+</form>
